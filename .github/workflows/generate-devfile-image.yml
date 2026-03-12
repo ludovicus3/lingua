@@ -1,12 +1,12 @@
 name: Generate Devfile Image
 
 on:
-  paths:
-    - "Dockerfile"
-    - ".github/workflows/generate-devfile-image.yml"
   push:
     branches:
       - "develop"
+    paths:
+      - "Dockerfile"
+      - ".github/workflows/generate-devfile-image.yml"
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
