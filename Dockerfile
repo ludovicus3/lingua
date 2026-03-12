@@ -10,8 +10,8 @@ LABEL version="${BASE_IMAGE_TAG}"
 USER 0
 
 RUN set -eux; \
-    dnf install -y llvm-devel llvm-toolset llvm-static cmake clang; \
-    dnf clean all
+    dnf install -y llvm-devel llvm-toolset llvm-static cmake clang clangd; \
+    dnf clean all -y --enable-repos='*'
 
 USER 10001
 
