@@ -11,7 +11,7 @@ USER 0
 
 RUN set -eux; \
     dnf install -y llvm-devel llvm-toolset llvm-static cmake clang clangd; \
-    dnf clean all -y --enable-repos='*'
+    dnf clean all -y --enablerepo='*'
 
 USER 10001
 
