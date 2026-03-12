@@ -1,0 +1,23 @@
+# ignore build files but keep build around
+build/*
+!build/.gitkeep
+
+# ignore clangd cache
+.cache/*
+
+# Compiled Object files
+*.o
+*.lo
+*.obj
+
+# Compiled Dynamic libraries
+.so
+
+# Compiled Static libraries
+.a
+.la
+
+# Executables
+*.out
+
+
