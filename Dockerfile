@@ -10,7 +10,7 @@ LABEL version="${BASE_IMAGE_TAG}"
 USER 0
 
 RUN set -eux; \
-    dnf install -y llvm-devel llvm-toolset llvm-static cmake clang clangd ccache; \
+    dnf install -y llvm-devel llvm-toolset llvm-static cmake clang clangd ccache java-21-openjdk; \
     dnf clean all -y --enablerepo='*'
 
 USER 10001
